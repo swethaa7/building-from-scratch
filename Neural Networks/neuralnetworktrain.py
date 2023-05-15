@@ -54,7 +54,6 @@ class OurNeuralNetwork:
                 o1 = sigmoid(sum_o1)
                 y_pred = o1
 
-
                 # Backprop
                 dL_dy_pred = -2 * (y_true - y_pred)
 
