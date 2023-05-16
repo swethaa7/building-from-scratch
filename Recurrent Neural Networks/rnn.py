@@ -55,7 +55,7 @@ class RNN:
 
     # Clip to prevent exploding gradients.
         for d in [d_wxh, d_whh, d_why, d_bh, d_by]:
-            np.clip(d, -1, 1, out=d)
+            np.clip(d, -1, 1, out=d)   # to clip a limit value in an input array
 
     # Update weights and biases using gradient descent.
         self.whh -= learn_rate * d_whh

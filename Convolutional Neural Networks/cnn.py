@@ -21,7 +21,6 @@ soft = SoftMax(13*13*8, 10)    # 13x13x8 -> 10
 
 # print(output.shape)
 
-
 # image_array_uint8 = (output * 255).astype(np.uint8)
 # image = Image.fromarray(image_array_uint8)
 # image.save("Convolutional Neural Networks\image.png")
